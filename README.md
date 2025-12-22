@@ -8,6 +8,8 @@ Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for
 - **Zero-copy camera streams (currently pass-through cameras only)** — Direct `AImageReader` access with `ANativeWindow` output
 - **Avatar "selfie camera" stream**
 
+![sensor-access](./doc/native-sensor-access_overview.gif)
+
 ## Architecture
 
 ```
