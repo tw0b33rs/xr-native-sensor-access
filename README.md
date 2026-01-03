@@ -39,7 +39,7 @@ Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/xr-native-sensor-access.git
+git clone https://github.com/tw0b33rs/xr-native-sensor-access.git
 cd xr-native-sensor-access
 ```
 
@@ -176,9 +176,8 @@ Add to `AndroidManifest.xml`:
 
 ## Resources
 
-- [Android NDK Sensors](https://developer.android.com/ndk/guides/sensors)
-- [Camera2 NDK API](https://developer.android.com/ndk/reference/group/camera)
-- [Android XR Compose](https://developer.android.com/develop/xr)
+- [Android NDK Sensors](https://developer.android.com/ndk/guides)
+- [Android XR](https://developer.android.com/develop/xr)
 
 > [!NOTE]
 > This project is optimized for Samsung Galaxy XR. Other Android XR devices may have different sensor configurations.
