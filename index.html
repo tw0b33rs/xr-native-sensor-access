@@ -1,65 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta name="google-site-verification" content="jsy8AfvCITq79QPmAxTNxToilMLqFwSXElIj3GkV4zo" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Android XR Native Sensor Access | xr-native-sensor-access</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Android XR Native Sensor Access" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for developers building sensor fusion, computer vision, or custom XR applications on Samsung Galaxy XR." />
-<meta property="og:description" content="Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for developers building sensor fusion, computer vision, or custom XR applications on Samsung Galaxy XR." />
-<link rel="canonical" href="https://tw0b33rs.github.io/xr-native-sensor-access/" />
-<meta property="og:url" content="https://tw0b33rs.github.io/xr-native-sensor-access/" />
-<meta property="og:site_name" content="xr-native-sensor-access" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Android XR Native Sensor Access" />
-<script type="application/ld+json">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>Android XR Native Sensor Access | xr-native-sensor-access</title>
+    <meta name="generator" content="Jekyll v3.10.0" />
+    <meta property="og:title" content="Android XR Native Sensor Access" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description"
+        content="Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for developers building sensor fusion, computer vision, or custom XR applications on Samsung Galaxy XR." />
+    <meta property="og:description"
+        content="Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for developers building sensor fusion, computer vision, or custom XR applications on Samsung Galaxy XR." />
+    <link rel="canonical" href="https://tw0b33rs.github.io/xr-native-sensor-access/" />
+    <meta property="og:url" content="https://tw0b33rs.github.io/xr-native-sensor-access/" />
+    <meta property="og:site_name" content="xr-native-sensor-access" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Android XR Native Sensor Access" />
+    <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","description":"Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for developers building sensor fusion, computer vision, or custom XR applications on Samsung Galaxy XR.","headline":"Android XR Native Sensor Access","name":"xr-native-sensor-access","url":"https://tw0b33rs.github.io/xr-native-sensor-access/"}</script>
-<!-- End Jekyll SEO tag -->
+    <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/xr-native-sensor-access/assets/css/style.css?v=5f23650b5dbb98afd6372727b03cedb87b2395b4">
+    <link rel="stylesheet"
+        href="/xr-native-sensor-access/assets/css/style.css?v=5f23650b5dbb98afd6372727b03cedb87b2395b4">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-<!-- Setup Google Analytics -->
+    <!-- Setup Google Analytics -->
 
 
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/xr-native-sensor-access/favicon.ico" -->
+    <!-- You can set your favicon here -->
+    <!-- link rel="shortcut icon" type="image/x-icon" href="/xr-native-sensor-access/favicon.ico" -->
 
-<!-- end custom head snippets -->
+    <!-- end custom head snippets -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Android XR Native Sensor Access",
+  "description": "Raw, low-latency sensor data access for Android XR devices (NDK/C++).",
+  "programmingLanguage": "C++",
+  "license": "https://opensource.org/licenses/Apache-2.0",
+  "url": "https://github.com/tw0b33rs/xr-native-sensor-access",
+  "codeRepository": "https://github.com/tw0b33rs/xr-native-sensor-access"
+}
+</script>
 
-  </head>
-  <body>
+
+</head>
+
+<body>
     <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://tw0b33rs.github.io/xr-native-sensor-access/">xr-native-sensor-access</a></h1>
-      
 
-      <h1 id="android-xr-native-sensor-access">Android XR Native Sensor Access</h1>
+        <h1><a href="https://github.com/tw0b33rs/xr-native-sensor-access">xr-native-sensor-access</a></h1>
 
-<p>Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for developers building sensor fusion, computer vision, or custom XR applications on Samsung Galaxy XR.</p>
 
-<h2 id="features">Features</h2>
+        <h1 id="android-xr-native-sensor-access">Android XR Native Sensor Access</h1>
 
-<ul>
-  <li><strong>High-frequency IMU access</strong> — Accelerometer and gyroscope at maximum hardware rates (<code class="language-plaintext highlighter-rouge">SENSOR_DELAY_FASTEST</code>)</li>
-  <li><strong>Zero-copy camera streams (currently pass-through cameras only)</strong> — Direct <code class="language-plaintext highlighter-rouge">AImageReader</code> access with <code class="language-plaintext highlighter-rouge">ANativeWindow</code> output</li>
-  <li><strong>Avatar “selfie camera” stream</strong></li>
-</ul>
+        <p>Raw, low-latency sensor data access on Android XR devices via NDK/C++. Built for developers building sensor
+            fusion, computer vision, or custom XR applications on Samsung Galaxy XR.</p>
 
-<p><img src="/xr-native-sensor-access/doc/native-sensor-access_overview.gif" alt="sensor-access" /></p>
+        <h2 id="features">Features</h2>
 
-<h2 id="architecture">Architecture</h2>
+        <ul>
+            <li><strong>High-frequency IMU access</strong> — Accelerometer and gyroscope at maximum hardware rates
+                (<code class="language-plaintext highlighter-rouge">SENSOR_DELAY_FASTEST</code>)</li>
+            <li><strong>Zero-copy camera streams (currently pass-through cameras only)</strong> — Direct <code
+                    class="language-plaintext highlighter-rouge">AImageReader</code> access with <code
+                    class="language-plaintext highlighter-rouge">ANativeWindow</code> output</li>
+            <li><strong>Avatar “selfie camera” stream</strong></li>
+        </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>┌─────────────────────────────────────────────────────────┐
+        <p><img src="/xr-native-sensor-access/doc/native-sensor-access_overview.gif" alt="sensor-access" /></p>
+
+        <h2 id="architecture">Architecture</h2>
+
+        <div class="language-plaintext highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code>┌─────────────────────────────────────────────────────────┐
 │              Kotlin/Compose UI (Display Only)           │
 │  MainActivity.kt → Raw values visualization             │
 ├─────────────────────────────────────────────────────────┤
@@ -71,43 +94,59 @@
 │  camera/ → ACameraManager + AImageReader (zero-copy)    │
 │  common/ → Threading, callbacks, buffer management      │
 └─────────────────────────────────────────────────────────┘
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h2 id="prerequisites">Prerequisites</h2>
+        <h2 id="prerequisites">Prerequisites</h2>
 
-<ul>
-  <li>Android Studio Otter or later</li>
-  <li>Android SDK 36</li>
-  <li>NDK 26.1.10909125 or later</li>
-  <li>Android XR device (only tested with Samsung Galaxy XR)</li>
-</ul>
+        <ul>
+            <li>Android Studio Otter or later</li>
+            <li>Android SDK 36</li>
+            <li>NDK 26.1.10909125 or later</li>
+            <li>Android XR device (only tested with Samsung Galaxy XR)</li>
+        </ul>
 
-<h2 id="getting-started">Getting Started</h2>
+        <h2 id="getting-started">Getting Started</h2>
 
-<h3 id="1-clone-the-repository">1. Clone the repository</h3>
+        <h3 id="1-clone-the-repository">1. Clone the repository</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/your-username/xr-native-sensor-access.git
+        <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code>git clone https://github.com/tw0b33rs/xr-native-sensor-access.git
 <span class="nb">cd </span>xr-native-sensor-access
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h3 id="2-build-and-run">2. Build and run</h3>
+        <h3 id="2-build-and-run">2. Build and run</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./gradlew assembleDebug
+        <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code>./gradlew assembleDebug
 ./gradlew installDebug
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h3 id="3-debug-sensor-access">3. Debug sensor access</h3>
+        <h3 id="3-debug-sensor-access">3. Debug sensor access</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Check sensor availability</span>
+        <div class="language-bash highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="c"># Check sensor availability</span>
 adb shell dumpsys sensorservice
 
 <span class="c"># Filter native logs</span>
 adb logcat <span class="nt">-s</span> NativeSensor
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h2 id="project-structure">Project Structure</h2>
+        <h2 id="project-structure">Project Structure</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app/src/main/
+        <div class="language-plaintext highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code>app/src/main/
 ├── cpp/                              # Native sensor layer
 │   ├── common/
 │   │   ├── callback_handler.h        # Thread-safe callback dispatch
@@ -131,15 +170,20 @@ adb logcat <span class="nt">-s</span> NativeSensor
 │       ├── SensorData.kt             # Kotlin data classes
 │       └── SensorViewModel.kt        # UI state holder
 └── res/
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h2 id="usage">Usage</h2>
+        <h2 id="usage">Usage</h2>
 
-<h3 id="imu-access">IMU Access</h3>
+        <h3 id="imu-access">IMU Access</h3>
 
-<p>The native layer provides high-frequency IMU data via <code class="language-plaintext highlighter-rouge">ASensorManager</code>:</p>
+        <p>The native layer provides high-frequency IMU data via <code
+                class="language-plaintext highlighter-rouge">ASensorManager</code>:</p>
 
-<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Initialize and start IMU at maximum rate</span>
+        <div class="language-kotlin highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="c1">// Initialize and start IMU at maximum rate</span>
 <span class="nc">NativeSensorBridge</span><span class="p">.</span><span class="nf">init</span><span class="p">()</span>
 
 <span class="c1">// Get latest samples</span>
@@ -152,13 +196,17 @@ adb logcat <span class="nt">-s</span> NativeSensor
 
 <span class="c1">// Clean up</span>
 <span class="nc">NativeSensorBridge</span><span class="p">.</span><span class="nf">stop</span><span class="p">()</span>
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h3 id="camera-streams">Camera Streams</h3>
+        <h3 id="camera-streams">Camera Streams</h3>
 
-<p>Zero-copy camera preview using native window surfaces:</p>
+        <p>Zero-copy camera preview using native window surfaces:</p>
 
-<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Enumerate available cameras</span>
+        <div class="language-kotlin highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="c1">// Enumerate available cameras</span>
 <span class="kd">val</span> <span class="py">cameras</span> <span class="p">=</span> <span class="nc">CameraBridge</span><span class="p">.</span><span class="nf">enumerateCameras</span><span class="p">()</span>
 
 <span class="c1">// Start preview to a surface</span>
@@ -166,13 +214,17 @@ adb logcat <span class="nt">-s</span> NativeSensor
 
 <span class="c1">// Stop and release</span>
 <span class="nc">CameraBridge</span><span class="p">.</span><span class="nf">stopPreview</span><span class="p">()</span>
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h3 id="xr-compose-integration">XR Compose Integration</h3>
+        <h3 id="xr-compose-integration">XR Compose Integration</h3>
 
-<p>The app automatically switches between spatial and 2D modes:</p>
+        <p>The app automatically switches between spatial and 2D modes:</p>
 
-<div class="language-kotlin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nc">LocalSpatialCapabilities</span><span class="p">.</span><span class="n">current</span><span class="p">.</span><span class="n">isSpatialUiEnabled</span><span class="p">)</span> <span class="p">{</span>
+        <div class="language-kotlin highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nc">LocalSpatialCapabilities</span><span class="p">.</span><span class="n">current</span><span class="p">.</span><span class="n">isSpatialUiEnabled</span><span class="p">)</span> <span class="p">{</span>
     <span class="nc">Subspace</span> <span class="p">{</span>
         <span class="nc">SpatialPanel</span><span class="p">(</span><span class="nc">SubspaceModifier</span><span class="p">.</span><span class="nf">width</span><span class="p">(</span><span class="mi">1200</span><span class="p">.</span><span class="n">dp</span><span class="p">).</span><span class="nf">height</span><span class="p">(</span><span class="mi">800</span><span class="p">.</span><span class="n">dp</span><span class="p">).</span><span class="nf">resizable</span><span class="p">().</span><span class="nf">movable</span><span class="p">())</span> <span class="p">{</span>
             <span class="nc">SensorDataDisplay</span><span class="p">(</span><span class="n">viewModel</span><span class="p">)</span>
@@ -181,86 +233,108 @@ adb logcat <span class="nt">-s</span> NativeSensor
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="nc">My2DContent</span> <span class="p">{</span> <span class="nc">SensorDataDisplay</span><span class="p">(</span><span class="n">viewModel</span><span class="p">)</span> <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h2 id="required-permissions">Required Permissions</h2>
+        <h2 id="required-permissions">Required Permissions</h2>
 
-<p>Add to <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code>:</p>
+        <p>Add to <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code>:</p>
 
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">"android.permission.CAMERA"</span> <span class="nt">/&gt;</span>
+        <div class="language-xml highlighter-rouge">
+            <div class="highlight">
+                <pre class="highlight"><code><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">"android.permission.CAMERA"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">"android.permission.HIGH_SAMPLING_RATE_SENSORS"</span> <span class="nt">/&gt;</span>
 
 <span class="nt">&lt;uses-feature</span> <span class="na">android:name=</span><span class="s">"android.hardware.sensor.accelerometer"</span> <span class="na">android:required=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;uses-feature</span> <span class="na">android:name=</span><span class="s">"android.hardware.sensor.gyroscope"</span> <span class="na">android:required=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;uses-feature</span> <span class="na">android:name=</span><span class="s">"android.hardware.camera"</span> <span class="na">android:required=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
-</code></pre></div></div>
+</code></pre>
+            </div>
+        </div>
 
-<h2 id="design-principles">Design Principles</h2>
+        <h2 id="design-principles">Design Principles</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Principle</th>
-      <th>Implementation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Zero-copy where possible</td>
-      <td><code class="language-plaintext highlighter-rouge">AHardwareBuffer</code>, direct <code class="language-plaintext highlighter-rouge">AImage</code> access</td>
-    </tr>
-    <tr>
-      <td>Subscribe, never poll</td>
-      <td>Callback/listener patterns for all sensors</td>
-    </tr>
-    <tr>
-      <td>Maximum rate</td>
-      <td><code class="language-plaintext highlighter-rouge">SENSOR_DELAY_FASTEST</code> (0μs) for IMU</td>
-    </tr>
-    <tr>
-      <td>Raw data first</td>
-      <td>Unprocessed sensor values, hardware timestamps</td>
-    </tr>
-    <tr>
-      <td>RAII throughout</td>
-      <td>Smart pointers, custom deleters for NDK handles</td>
-    </tr>
-  </tbody>
-</table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Principle</th>
+                    <th>Implementation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Zero-copy where possible</td>
+                    <td><code class="language-plaintext highlighter-rouge">AHardwareBuffer</code>, direct <code
+                            class="language-plaintext highlighter-rouge">AImage</code> access</td>
+                </tr>
+                <tr>
+                    <td>Subscribe, never poll</td>
+                    <td>Callback/listener patterns for all sensors</td>
+                </tr>
+                <tr>
+                    <td>Maximum rate</td>
+                    <td><code class="language-plaintext highlighter-rouge">SENSOR_DELAY_FASTEST</code> (0μs) for IMU
+                    </td>
+                </tr>
+                <tr>
+                    <td>Raw data first</td>
+                    <td>Unprocessed sensor values, hardware timestamps</td>
+                </tr>
+                <tr>
+                    <td>RAII throughout</td>
+                    <td>Smart pointers, custom deleters for NDK handles</td>
+                </tr>
+            </tbody>
+        </table>
 
-<h2 id="upcoming-features">Upcoming Features</h2>
+        <h2 id="upcoming-features">Upcoming Features</h2>
 
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Eye tracking</strong> — Gaze direction and fixation points via XR runtime APIs</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Hand tracking</strong> — Skeletal hand pose and gesture recognition</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Microphone access</strong> — Low-latency audio capture for voice input</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Depth sensing</strong> — ToF/stereo depth maps from XR cameras</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Spatial anchors</strong> — Persistent world-locked reference points</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Controller input</strong> — Raw input from XR controllers</li>
-</ul>
+        <ul class="task-list">
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"
+                    disabled="disabled" /><strong>Eye tracking</strong> — Gaze direction and fixation points via XR
+                runtime APIs</li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"
+                    disabled="disabled" /><strong>Hand tracking</strong> — Skeletal hand pose and gesture recognition
+            </li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"
+                    disabled="disabled" /><strong>Microphone access</strong> — Low-latency audio capture for voice input
+            </li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"
+                    disabled="disabled" /><strong>Depth sensing</strong> — ToF/stereo depth maps from XR cameras</li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"
+                    disabled="disabled" /><strong>Spatial anchors</strong> — Persistent world-locked reference points
+            </li>
+            <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"
+                    disabled="disabled" /><strong>Controller input</strong> — Raw input from XR controllers</li>
+        </ul>
 
-<h2 id="resources">Resources</h2>
+        <h2 id="resources">Resources</h2>
 
-<ul>
-  <li><a href="https://developer.android.com/ndk/guides/sensors">Android NDK Sensors</a></li>
-  <li><a href="https://developer.android.com/ndk/reference/group/camera">Camera2 NDK API</a></li>
-  <li><a href="https://developer.android.com/develop/xr">Android XR Compose</a></li>
-</ul>
+        <ul>
+            <li><a href="https://developer.android.com/ndk/guides/sensors">Android NDK Sensors</a></li>
+            <li><a href="https://developer.android.com/ndk/reference/group/camera">Camera2 NDK API</a></li>
+            <li><a href="https://developer.android.com/develop/xr">Android XR Compose</a></li>
+        </ul>
 
-<blockquote>
-  <p>[!NOTE]
-This project is optimized for Samsung Galaxy XR. Other Android XR devices may have different sensor configurations.</p>
-</blockquote>
+        <blockquote>
+            <p>[!NOTE]
+                This project is optimized for Samsung Galaxy XR. Other Android XR devices may have different sensor
+                configurations.</p>
+        </blockquote>
 
 
 
-      
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        This site is open source. <a href="https://github.com/tw0b33rs/xr-native-sensor-access/edit/main/README.md">Improve this page</a>.
-      </div>
-      
+
+        <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+            This site is open source. <a
+                href="https://github.com/tw0b33rs/xr-native-sensor-access/edit/main/README.md">Improve this page</a>.
+        </div>
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+        integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
-  </body>
+</body>
+
 </html>
